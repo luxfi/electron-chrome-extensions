@@ -1,21 +1,21 @@
 {
-  "name": "@lux-wallet/electron-chrome-extensions",
+  "name": "@luxwallet/electron-chrome-extensions",
   "version": "3.9.13-alpha.0",
   "description": "Chrome extension support for Electron",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && webpack",
-    "pretest": "esbuild spec/fixtures/crx-test-preload.ts --bundle --external:electron --outfile=spec/fixtures/crx-test-preload.js --platform=node",
-    "test": "node ./script/spec-runner.js",
-    "ci": "npm run build && npm run test",
-    "prepublishOnly": "npm run build"
+    "test": "node ./script/spec-runner.js"
   },
   "keywords": [
     "electron",
     "chrome",
     "extensions"
   ],
-  "repository": "https://github.com/luxfi/electron-desktop-shell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxfi/electron-desktop-shell.git"
+  },
   "author": "Samuel Maddock <sam@samuelmaddock.com>",
   "license": "SEE LICENSE IN LICENSE.md",
   "files": [
@@ -80,5 +80,9 @@
       ]
     ]
   },
-  "gitHead": "839c35ad15d0af00f23971a13d6f77fd4d2b64eb"
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/luxfi/electron-desktop-shell/issues"
+  },
+  "homepage": "https://github.com/luxfi/electron-desktop-shell#readme"
 }
