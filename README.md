@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="electron-chrome-extensions" width="880"></p>
+
 # electron-chrome-extensions
 
 > Chrome extension API support for Electron.
